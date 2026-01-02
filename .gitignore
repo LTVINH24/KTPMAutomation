@@ -12,7 +12,5 @@ venv
 docs/Data_Generation_Report.md
 docs/Data_Generation_Report.pdf
 docs/*.pdf
-data
-data/
 tests/__pycache__/
 __pycache__/
