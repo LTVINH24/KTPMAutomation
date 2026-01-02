@@ -1,0 +1,18 @@
+venv
+.env
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# Data Generation Report
+docs/Data_Generation_Report.md
+docs/Data_Generation_Report.pdf
+docs/*.pdf
+data
+data/
+tests/__pycache__/
+__pycache__/
