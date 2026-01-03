@@ -1,10 +1,10 @@
-# KTPM - Công cụ tạo dữ liệu test cho OrangeHRM
+# KTPM - Công cụ automation testing cho OrangeHRM
 
 ## 🛠️ Cài đặt
 
 ```bash
 # 1. Clone repo hoặc mở thư mục source code
-git clone https://github.com/LTVINH24/KTPM.git
+git clone https://github.com/LTVINH24/KTPMAutomation.git
 
 # 2 Tạo venv
 python -m venv venv
@@ -19,27 +19,15 @@ cp .env.example .env
 ```
 ---
 
-## 🚀 Chạy Generate Data
+## 🚀 Chạy Automation Testing
 
-### Cách 1: Chạy tất cả
-
-```bash
-python main.py
-```
-
-### Cách 2: Chạy từng script
 
 ```bash
-# Bước 1: Tạo nhân viên (Bắt buộc chạy trước)
-python generate_dim.py
+python -m pytest --browser=chrome --html=report.html --self-contained-html
+```
+### --browser: chrome/firefox/edge
+### --html: tên file báo cáo kết quả test
 
-# Bước 2: Tạo dữ liệu time and attendance
-python generate_time_attendance.py
-```
-## 🚀 Reset Data
-```bash
-py reset_data.py
-```
 ## 🔐 Thông tin mặc định
 
 | Thông tin | Giá trị |
